@@ -9,11 +9,11 @@ class AliFile {
 
   async start() {
     const { out, fileName, dir, refreshToken: refresh_token,
-      driverId: deriver_id, parentFileId: parent_file_id，
+      driveId: drive_id, parentFileId: parent_file_id,
       overWrite } = this.opt
 
     const t = this.task = new MultipartUpload({
-      deriver_id, refresh_token, parent_file_id,
+      drive_id, refresh_token, parent_file_id,
       intervalTime: 60 * 3,
       overWrite
     })

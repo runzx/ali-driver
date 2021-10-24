@@ -11,7 +11,7 @@ const argv = command()
   .opt('o', 'out', 'string', 'save file name')
   .opt('d', 'dir', 'string', 'save file dir')
   .opt('t', 'refresh-token', 'string', 'set refresh_token')
-  .opt('i', 'driver-id', 'string', 'set driver_id') // setRaw
+  .opt('i', 'drive-id', 'string', 'set drive_id') // setRaw
   .opt('p', 'parent-file-id', 'string', 'set parent_file_id') // setRaw
   .opt('w', 'over-write', 'boolean', 'set overWrite') // setRaw
 
