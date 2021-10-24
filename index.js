@@ -5,8 +5,9 @@
  */
 const { AliFile } = require('./app/file-upload')
 const { command } = require('./lib/command')
+const package = require("./package.json")
 
-const argv = command()
+const argv = command(package.version)
   .opt('f', 'fileName', 'string', 'add upload file')
   .opt('o', 'out', 'string', 'save file name')
   .opt('d', 'dir', 'string', 'save file dir')
