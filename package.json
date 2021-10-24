@@ -1,0 +1,14 @@
+{
+  "name": "ali-driver",
+  "version": "1.0.0",
+  "description": "ali driver file upload and download",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ali-driver"
+  ],
+  "author": "zhaixiang",
+  "license": "MIT"
+}
