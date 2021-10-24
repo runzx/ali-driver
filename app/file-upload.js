@@ -22,7 +22,7 @@ class AliFile {
     if (fileName) {
       await t.initUpload(fileName, out, dir)
     } else {
-      if (tasks === 0) return process.exit(0)
+      if (tasks === 0) return t.stop().then(() => process.exit(0))
     }
 
     process.on('SIGINT', function () {
