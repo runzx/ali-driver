@@ -1,6 +1,6 @@
 {
   "name": "ali-driver",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "ali driver file upload and download",
   "main": "index.js",
   "scripts": {
