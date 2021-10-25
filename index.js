@@ -8,15 +8,16 @@ const { command } = require('./lib/command')
 const package = require("./package.json")
 
 const argv = command(package.version)
-  .opt('f', 'fileName', 'string', 'add upload file')
-  .opt('o', 'out', 'string', 'save file name')
-  .opt('d', 'dir', 'string', 'save file dir')
-  .opt('t', 'refresh-token', 'string', 'set refresh_token')
+  .opt('f', 'fileName', 'string', 'add upload file|folder')
+  .opt('n', 'name', 'string', 'save file name("path/name")')
+  .opt('d', 'download', 'string', 'download file dir|folder')
   .opt('i', 'drive-id', 'string', 'set drive_id') // driveId
-  .opt('p', 'parent-file-id', 'string', 'set parent_file_id')
+  .opt('t', 'refresh-token', 'string', 'set refresh_token')
+  .opt('p', 'parent', 'string', 'set parent_file_id')
   .opt('w', 'over-write', 'boolean', 'set overWrite')
   .opt('c', 'clear-task', 'array', 'remove type task')
-  .opt('l', 'list-task', 'array', 'list type task')
+  .opt('s', 'list-task', 'array', 'list type task')
+  .opt('l', 'ls', 'string', 'ls ali dir')
 
 let arg = argv.parse()
 
