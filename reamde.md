@@ -6,4 +6,10 @@
 
 ## command
 
-1. `node index.js -f xx` upload file xx
+1. `npx ali-driver -f xx` upload file xx
+
+2. `npx ali-driver -t yy` set refresh_token
+
+3. `npx ali-driver -h` help
+4. `npx ali-driver -l 2,4` list task list in status
+5. `npx ali-driver -c 2,4` remove task list in status
