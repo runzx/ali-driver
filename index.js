@@ -11,6 +11,7 @@ const argv = command(package.version)
   .opt('f', 'fileName', 'string', 'add upload file|folder')
   .opt('n', 'name', 'string', 'save file name("path/name")')
   .opt('d', 'download', 'string', 'download file dir|folder')
+  .opt('o', 'out', 'string', 'download to folder')
   .opt('i', 'drive-id', 'string', 'set drive_id') // driveId
   .opt('t', 'refresh-token', 'string', 'set refresh_token')
   .opt('p', 'parent', 'string', 'set parent_file_id')
