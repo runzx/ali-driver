@@ -8,6 +8,7 @@
 ## setup
 
 1. `npm install ali-driver`
+2. `yarn add ali-driver`
 
 ## command
 
