@@ -19,6 +19,8 @@ const argv = command(package.version)
   .opt('c', 'clear-task', 'array', 'remove type task')
   .opt('s', 'list-task', 'array', 'list type task')
   .opt('l', 'ls', 'string', 'ls ali dir')
+  .opt('e', 'interval-time', 'number', 'set intervalTime')
+  .opt('m', 'max-tasks', 'number', 'set maxTasks')
 
 let arg = argv.parse()
 
